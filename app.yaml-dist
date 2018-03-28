@@ -1,0 +1,14 @@
+runtime: nodejs
+env: flex
+
+env_variables:
+  SQL_USER: postgres
+  SQL_PASSWORD: PASSWORD
+  SQL_DATABASE: postgres
+  INSTANCE_CONNECTION_NAME: mission-bap:europe-west1:mission-bap-pg
+  BRIQS_TOKEN: BRIQSTOKEN
+  BRIQS_ORGA: BAP
+  SLACK_TOKEN: XXX
+
+beta_settings:
+  cloud_sql_instances: mission-bap:europe-west1:mission-bap-pg

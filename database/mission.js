@@ -20,6 +20,7 @@ Database.getRunningMissions = knex => {
       .whereNull("executor_id")
       // .whereRaw("deadline > ?", moment().toISOString())
       .groupBy("mission.id")
+      .orderBy("mission.created_at", "DESC");
   );
 };
 
@@ -38,7 +39,8 @@ Database.getAllMissions = knex => {
     )
     .from("mission")
     .leftJoin("mission_histo", "mission.id", "mission_histo.id_mission")
-    .groupBy("mission.id");
+    .groupBy("mission.id")
+    .orderBy("mission.created_at", "DESC");
 };
 
 Database.updatePriceMission = (knex, trx, id, price) => {

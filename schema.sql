@@ -38,4 +38,4 @@ ALTER TABLE public.mission_histo
 
 
 
--- postgres=> INSERT INTO m ission VALUES(1, 'jules.truong.perso', 'test', 1, '1999-01-08 04:05:06', '1999-01-08 04:05:06'
+-- postgres=> INSERT INTO mission VALUES(1, 'jules.truong.perso', 'test', 1, '1999-01-08 04:05:06', '1999-01-08 04:05:06'
